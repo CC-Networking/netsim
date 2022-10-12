@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ConfPhysCmd extends ConfigCommand {
-    private static Pattern ptrn = Pattern.compile("^\\s*conf-phys\\s+(\\w+)\\s+(\\d+)(\\s+(.+[^\\s]))?\\s*$");
+    private static Pattern ptrn = Pattern.compile("^\\s*conf-phys\\s+(\\w+)\\s+(\\d+)(\\s+(.*[^\\s]))?\\s*$");
     private Graph graph;
 
     public ConfPhysCmd(Graph g) {

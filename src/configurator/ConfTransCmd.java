@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ConfTransCmd extends ConfigCommand {
-    private static Pattern ptrn = Pattern.compile("^\\s*conf-trans\\s+(\\w+)(\\s+(.+[^\\s]))?\\s*$");
+    private static Pattern ptrn = Pattern.compile("^\\s*conf-trans\\s+(\\w+)(\\s+(.*[^\\s]))?\\s*$");
     private Graph graph;
 
     public ConfTransCmd(Graph g) {
